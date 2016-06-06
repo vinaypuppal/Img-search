@@ -18,6 +18,7 @@
   },
   "homepage": "https://github.com/vinaypuppal/Img-search",
   "dependencies": {
+    "bing.search": "^1.0.1",
     "express": "^4.13.4",
     "mongodb": "^2.1.21",
     "morgan": "^1.7.0",
