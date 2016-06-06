@@ -4,7 +4,8 @@
   "description": "API Basejump: Image Search Abstraction Layer Microservice(Freecodecamp Project)",
   "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon server.js"
   },
   "repository": {
     "type": "git",
@@ -15,5 +16,11 @@
   "bugs": {
     "url": "https://github.com/vinaypuppal/Img-search/issues"
   },
-  "homepage": "https://github.com/vinaypuppal/Img-search"
+  "homepage": "https://github.com/vinaypuppal/Img-search",
+  "dependencies": {
+    "express": "^4.13.4",
+    "mongodb": "^2.1.21",
+    "morgan": "^1.7.0",
+    "nodemon": "^1.9.2"
+  }
 }
