@@ -1,0 +1,19 @@
+{
+  "name": "imgsearch",
+  "version": "1.0.0",
+  "description": "API Basejump: Image Search Abstraction Layer Microservice(Freecodecamp Project)",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/vinaypuppal/Img-search.git"
+  },
+  "author": "vinaypuppal",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vinaypuppal/Img-search/issues"
+  },
+  "homepage": "https://github.com/vinaypuppal/Img-search"
+}
