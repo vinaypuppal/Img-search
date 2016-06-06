@@ -5,7 +5,8 @@ module.exports = function (term,offset,res) {
 	var skip = 0;
 	var top = 10;
 	if(offset){
-		skip = offset-1 * top
+		offset = parseInt(offset);
+		skip = (offset-1) * top;
 	}
 	search.images(term,{
 		top:top,
