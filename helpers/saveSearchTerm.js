@@ -24,7 +24,7 @@ module.exports = function (term,offset,res) {
 					var updatedata = {
 						recentlySearchedAt: new Date().toLocaleString()
 					};
-					update({searchTerm:term},{$set:updatedata},function (error) {
+					imgSearch.update({searchTerm:term},{$set:updatedata},function (error) {
 						if (error) {
 							throw error;
 						}
