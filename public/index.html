@@ -3,6 +3,20 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Image Search Abstraction Layer</title>
+	<meta description="API Basejump: Image Search Abstraction Layer(Freecodecamp Project)">
+	<!-- FACEBOOK -->
+	<meta property="og:type" content="website" />
+	<meta property="og:title" content="Image Search Abstraction Layer(Freecodecamp Project)">
+	<meta property="og:url" content="https://vp-images.herokuapp.com">
+	<meta property="og:image" content="https://res.cloudinary.com/vinaypuppal/image/upload/c_scale,w_1024/v1465221550/fcc/img-search-ui.png">
+	<meta property="og:site_name" content="Image Search Abstraction Layer">
+	<meta property="og:description" content="API Basejump: Image Search Abstraction Layer(Freecodecamp Project)">
+	<!-- TWITTER -->
+	<meta name="twitter:card" content="summary_large_image">
+	<meta name="twitter:site" content="@vinaypuppal">
+	<meta name="twitter:title" content="Image Search Abstraction Layer(Freecodecamp Project)">
+	<meta name="twitter:description" content="API Basejump: Image Search Abstraction Layer(Freecodecamp Project)">
+	<meta name="twitter:image:src" content="https://res.cloudinary.com/vinaypuppal/image/upload/c_scale,w_1024/v1465221550/fcc/img-search-ui.png">
 	<!-- mobile viewport -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0 user-scalable=no">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/css/materialize.min.css">
@@ -12,7 +26,102 @@
 	<link rel="icon" href="favicon.ico" type="image/x-icon">
 </head>
 <body>
-	<h1>Hello World</h1>
+		<nav class='green darken-3'>
+	    <div class="nav-wrapper">
+	      <a href="/" class="brand-logo">Image Search Abstraction Layer(<small>Freecodecamp Project</small>)</a>
+	      <ul class="right hide-on-med-and-down">
+	      <li><a href="https://github.com/vinaypuppal/Img-search" target="_blank"><i class="fa fa-github left"></i>View Source Code</a></li>
+	      </ul>
+	    </div>
+	</nav>
+	    <main class="container">
+	    	<h4>API Basejump: Image Search Abstraction Layer</h4>
+	    	<h5>User stories:</h5>
+	    	<blockquote>
+	    		 I can get the image URLs, alt text and page urls for a set of images relating to a given search string.
+	    	</blockquote>
+	    	<blockquote>
+	    		I can paginate through the responses by adding a ?offset=2 parameter to the URL.
+	    	</blockquote>
+	    	<blockquote>
+	    		 I can get a list of the most recently submitted search strings.
+	    	</blockquote>
+	    	<div class="row">
+	    		<div class="col s12 m6">
+	    			<div class="card">
+	    				<div class="card-content">
+	    					<span class="card-title">Images Search Example Usage:</span>
+	    					<p id="imgSearch-link">
+	    						<!-- main.js adds natural link url here -->
+	    					</p>
+	    					<p id="offset-link">
+	    						<!-- main.js adds natural link url here -->
+	    					</p>
+	    				</div>
+	    				<div id="try-it-search" class="card-action">
+							<!-- main.js adds links here -->
+	    				</div>
+	    			</div>
+	    		</div>
+	    		<div class="col s12 m6">
+	    			<div class="card">
+	    				<div class="card-content">
+	    					<span class="card-title">Find Latest Images Example Usage:</span>
+	    					<p id="latestImgs-link">
+	    						<!-- main.js adds natural link url here -->
+	    					</p>
+	    				</div>
+	    				<div id="try-it-latest" class="card-action">
+							<!-- main.js adds links here -->
+	    				</div>
+	    			</div>
+	    		</div>
+	    	</div>
+	    	<div class="row">
+	    		<div class="col s12 m6">
+	    			<div class="card">
+	    				<div class="card-content">
+	    					<span class="card-title">Images Search Example Output:</span>    						
+<pre>
+[
+ {
+  imgUrl: "https://cdn-images-1.medium.com/max/400/1*5uG9wzkw91KX-H75HjvrhQ.png",
+  altText: "Freecodecamp",
+  thumbnailUrl: "http://ts3.mm.bing.net/th?id=OIP.Mde3a6133082cf34c0d53fad01f1c7c76o0&pid=15.1",
+  pageUrl: "https://medium.com/swlh/10-great-websites-to-learn-coding-ff7e411d708d"
+ },
+ ...
+]
+</pre>
+	    				</div>
+	    			</div>
+	    		</div>
+	    		<div class="col s12 m6">
+	    			<div class="card">
+	    				<div class="card-content">
+	    					<span class="card-title">Find Latest Images Example Output:</span>    						
+<pre>
+[
+ {
+  searchTerm: "freecodecamp",
+  firstSearchedAt: "6/6/2016, 7:10:31 PM",
+  recentlySearchedAt: "6/6/2016, 7:13:40 PM"
+ },
+ ...
+]
+</pre>
+	    				</div>
+	    			</div>
+	    		</div>
+	    	</div>
+	    </main>
+		<div class="page-footer">
+			<div class="footer-copyright text-center">
+	            <div class="container">
+	             Made with <i class="fa fa-heart-o"></i> By <a href="https://vinaypuppal.com" target="_blank">VinayPuppal</a> © 2016
+	            </div>
+	          </div>
+		</div>
 	<!-- Compiled and minified JavaScript -->
 	<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-rc1/jquery.min.js'></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/js/materialize.min.js"></script>
